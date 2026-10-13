@@ -6,9 +6,11 @@ Saf Python standart kütüphaneleri kullanılarak geliştirilmiş, harici bağı
 
 ## Özellikler
 
-- **Harici Bağımlılık Yok**: Yalnızca standart Python kütüphaneleri (`re`, `collections`, `sys`) kullanılır. `pip install` gerektirmez.
+- **Harici Bağımlılık Yok**: Yalnızca standart Python kütüphaneleri (`re`, `collections`, `sys`, `os`) kullanılır. `pip install` gerektirmez.
+- **580+ Kelimelik Kapsamlı Stopword Havuzu**: Türkçedeki tüm kişi/işaret/belgisiz zamirler, bağlaçlar, edatlar, zarflar, yardımcı fiil formları ve sayılar kategorize edilmiştir.
+- **Kolay Özelleştirilebilir (`stopwords.txt`)**: Kodu değiştirmeden `stopwords.txt` dosyasına yeni kelimeler ekleyebilir veya silebilirsiniz. Dosya olmasa bile gömülü veritabanı otomatik devreye girer.
+- **Dinamik Yönetim**: `add_stopwords()` ve `remove_stopwords()` fonksiyonlarıyla çalışma anında listeyi genişletebilirsiniz.
 - **Türkçe Harf Uyumluluğu**: Python'ın varsayılan `.lower()` metodunun yol açtığı `I -> i` hatasını önleyen özel `turkish_lower` fonksiyonu (`I -> ı`, `İ -> i`).
-- **Kapsamlı Stopword Listesi**: Türkçede en sık kullanılan dolgu kelimeleri, bağlaçlar ve edatları barındıran zengin liste.
 - **Detaylı Frekans & İstatistik Raporu**:
   - Toplam kelime sayısı
   - Çıkarılan stopword sayısı
